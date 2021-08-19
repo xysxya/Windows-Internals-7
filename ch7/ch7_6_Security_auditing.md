@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 ## 7.6 安全审计(Security auditing)
 
 对象管理器可以生成审计事件作为访问检查的结果，用户应用程序可用的Windows函数可以直接生成它们。始终允许内核模式代码生成审计事件。两个权限，`SeSecurityPrivilege`和`SeAuditPrivilege`，与审计相关。进程必须具有`SeSecurityPrivilege`权限来管理安全事件日志和查看或设置对象的SACL。但是，调用审计系统服务的流程必须具有`SeAuditPrivilege`特权才能成功生成审计记录。
